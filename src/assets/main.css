@@ -1,0 +1,244 @@
+@import "../../public/fonts/font.css";
+
+:root {
+    --theme-color: #626aef
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+#app {
+    width: 100%;
+    height: 100%;
+    font-weight: normal;
+}
+
+/* 信息弹框 */
+.custom-message .el-message__content {
+    font-size: 15px;
+}
+
+/* 表单 */
+.el-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.el-form-item {
+    margin: 0 !important;
+}
+
+.el-form-item__error {
+    padding-top: 5px !important;
+    font-size: 14px;
+}
+
+.el-form .unlocked:hover .el-radio-button__inner {
+    color: #349c5e !important;
+}
+
+.el-form .locked:hover .el-radio-button__inner {
+    color: #f25a47 !important;
+}
+
+.el-form .unlocked.is-active .el-radio-button__inner {
+    background-color: #349c5e !important;
+    border-color: #349c5e !important;
+    color: #fff !important;
+}
+
+.el-form .locked.is-active .el-radio-button__inner {
+    background-color: #f25a47 !important;
+    border-color: #f25a47 !important;
+    box-shadow: none !important;
+    color: #fff !important;
+}
+
+/* 菜单 */
+.el-menu-item {
+    font-size: 16px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px !important;
+}
+
+/* 表格 */
+.el-table__header {
+    height: 60px !important;
+}
+
+.el-table__row {
+    height: 67px !important;
+}
+
+
+.custom-table {
+    border-radius: 5px !important;
+    border: 1px solid #dedede;
+    width: 100%;
+    height: 550px !important;
+}
+
+.custom-table .el-table__row .cell {
+    width: 100% !important;
+    padding: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 70px !important;
+}
+
+.custom-table .cell button {
+    margin: 0 !important;
+}
+
+.el-table th {
+    background-color: var(--theme-color) !important;
+    color: #fff !important;
+    text-align: center !important;
+    font-size: 15px !important;
+    font-weight: normal !important;
+    border: 0 !important;
+}
+
+.el-table td {
+    color: #000 !important;
+    text-align: center !important;
+    font-size: 14px !important;
+    border: 0 !important;
+}
+
+.flavor-table {
+    border-radius: 5px !important;
+    margin-left: 10px;
+}
+
+.flavor-table .el-table__header {
+    height: 50px !important;
+}
+
+.flavor-table th {
+    font-size: 14px !important;
+    height: 40px !important;
+}
+
+.category-table {
+    height: 500px !important;
+}
+
+.sort-table {
+    height: 600px !important;
+}
+
+.el-table .admin,
+.el-table .admin td {
+    background-color: #d6d5d5 !important;
+}
+
+.dishes-type {
+    display: none;
+}
+
+.bundle-type {
+    display: none;
+}
+
+.status {
+    margin-left: -30px;
+}
+
+/* .el-table__body tr:hover > td{
+    background-color: transparent !important;
+} */
+
+/* 卡片 */
+.card-header {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.el-card__footer {
+    display: flex;
+    justify-content: end;
+}
+
+.body-top {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.el-card__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* el-dialog */
+.el-dialog {
+    padding: 30px !important;
+    position: absolute !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 !important;
+    border-radius: 20px !important;
+}
+
+.el-dialog__title {
+    font-family: "SmileySans";
+    font-size: 22px !important;
+}
+
+/* 图片上传 */
+.el-upload {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    border: 1px dashed #8c939d;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: var(--el-transition-duration-fast);
+    border-radius: 6px;
+}
+
+.avatar-uploader .el-upload {
+    border-radius: 50%;
+}
+
+.avatar-uploader .el-upload:hover {
+    border-color: var(--el-color-primary);
+}
+
+.el-icon.avatar-uploader-icon {
+    font-size: 28px;
+    color: #8c939d;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+
+/* el-popover */
+.custom-popover {
+    width: 100%;
+    text-align: center;
+}
+
+/* 空状态 */
+.el-empty__description {
+    margin-top: -50px !important;
+}
+
+.el-empty__description p {
+    color: #000 !important;
+}
